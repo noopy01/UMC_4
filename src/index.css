@@ -1,13 +1,246 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import 'reset.css';
+
+.titleBox{
+ 
+  border-bottom: 100px solid rgb(2, 55, 100);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.root-wrap{
+  position:absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+/*header시작 */
+.header-container{
+  background-color: rgba(3,37,65,1);
+}
+.header-wrap{ 
+  height: 64px;
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+.header-left-wrap{
+  display: flex;
+  color: beige;
+
+
+}
+
+.header-left-wrap ul{
+  display: flex;
+  margin-left: 16px;
+
+}
+
+.header-left-wrap li{
+  margin-right: 50px;
+  padding: 8px;
+  margin: 16px;
+}
+
+.header-nav-item{
+  color: beige;
+  text-decoration: none;
+  font-weight: 600;
+
+}
+
+
+.header-item{
+  color: beige;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+}
+.page-container{
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 32px 0;
+}
+
+.app-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+.movie-container{
+  width: 250px;
+  margin: 16px;
+  background-color: rgb(26, 86, 155);
+  color: white ;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+
+}
+.movie-container img {
+  max-width: 100%;
+  
+}
+
+.movie-info{
+  position: relative;
+  display: flex;
+  padding: 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+.movie-info h4{
+  margin: 0;
+}
+
+.movie-info span{
+  margin-left: 3px;
+}
+
+.textBox {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  z-index: 3;
+  padding-top: 50%;
+}
+
+
+
+.textBox :nth-child(1) {
+  color: white;
+  font-size: 17px;
+  font-weight: 500;
+  opacity: 0;
+  transform: translateY(50px);
+}
+
+
+.textBox :nth-child(2) {
+  color: white;
+  margin: 5px 0 0;
+  font-size: 16px;
+  font-weight: 400;
+  opacity: 0;
+  transform: translateY(50px);
+  margin-top: 20px;
+}
+
+.textBox p {
+  transition: all 0.2s ease-in-out 0.15s;
+}
+
+.movie-container:hover .image {
+  transform: scale(1.1);
+  filter: blur(3px);
+}
+
+.movie-container:hover p {
+  opacity: 1;
+  transform: translateY(-330px);
+  width: 90%;
+  margin-left: 15px;
+}
+
+.movie-container:after {
+  content: "";
+  display: block;
+  background: rgba(0, 0, 0, 0.2);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  opacity: 0;
+}
+
+
+.container{
+  width: 100%;
+  height: 100%;
+  background-color: rgb(2, 14, 23);
+}
+
+.titleWrap{
+  width: 100%;
+  height: 10%;
+  font-size: 25px;
+  font: bold;
+  color: aliceblue;
+  text-align: center;
+  padding-top: 10%;
+
+}
+
+.contentWrap{
+  width: 100%;
+  height: 100%;
+  margin-top: 100px;
+  background-color: rgb(6, 69, 117);
+  font-size: 20px;
+  font-weight: 500;
+  color: aliceblue;
+  font: bold;
+  text-align: center;
+  padding-top: 40px;
+}
+
+.inputWrap{
+  margin-top:20px;
+ 
+}
+.inputTitle{
+  font-size: 40px;
+  font-weight: 500;
+}
+
+.input{
+  margin-top: 14px;
+  border-radius: 30px;
+  width: 300px;
+  height: 40px;
+}
+
+.ho:hover {
+  font-size: 21px;
+  color:antiquewhite;
+}
+
+.detail-container{
+  background-color: rgb(255, 194, 217);
+  height: 100%;
+  display:flex;
+  padding: 5%;
+
+}
+.title_box{
+  font-size: 20px;
+  font: bold;
+  color:rgba(26, 15, 2, 0.505);
+  margin: 0 auto;
+  padding-top: 10%;
+ 
+  
+  
+}
+
+.title_text{
+  font-size: 32px;
+  font-weight: 900;
+}
+
+.login{
+color: white;
+font-size: 15px;
+font-weight: bold;
+background-color: rgba(3,37,65,1);
+
 }
