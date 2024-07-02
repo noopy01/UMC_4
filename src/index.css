@@ -112,7 +112,10 @@
   padding-top: 50%;
 }
 
-
+.ho:hover {
+  font-size: 21px;
+  color:rgb(131, 6, 13);
+}
 
 .textBox :nth-child(1) {
   color: white;

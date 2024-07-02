@@ -1,12 +1,14 @@
 import React, { useState} from "react";
-import { Link } from "react-router-dom";
+import { Link} from "react-router-dom";
+
+
 
 
 export default function Header(){
-
     const [text, setText] = useState(true);
-
+    
     return (
+    
     <div className="header-container">
         <div className="header-wrap">
             <div className="header-left-wrap">
